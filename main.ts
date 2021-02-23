@@ -4,7 +4,7 @@ let player: game.LedSprite = game.createSprite(2, 4)
 game.setScore(0)
 
 basic.forever(() => {
-    fruit = game.createSprite(Math.random(5), 0)
+    fruit = game.createSprite(randint(0, 4), 0)
     basic.pause(delay)
     while (fruit.get(LedSpriteProperty.Y) < 4) {
         fruit.change(LedSpriteProperty.Y, 1)
